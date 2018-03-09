@@ -1,9 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace BarremMoorTxTAdventure
 {
     class MainClass
@@ -13,7 +7,6 @@ namespace BarremMoorTxTAdventure
             Person x = new Person();
             x.creation();
             x.intro();
-            x.playerposition();
         }
     }
     class Person
