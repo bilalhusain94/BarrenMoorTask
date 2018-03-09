@@ -7,6 +7,11 @@ namespace BarremMoorTxTAdventure
             Person x = new Person();
             x.creation();
             x.intro();
+            
+            reach player = new reach();
+            player.function(2);
+            Console.ReadLine();
+
         }
     }
     class Person
@@ -76,6 +81,26 @@ namespace BarremMoorTxTAdventure
         {
          
         }
+           class reach
+    {
+        public void function(int player)
+        {
+            if ((player >= 1 && player <= 2))
+            {
+                switch (player)
+                {
+                    case 1:
+                        Console.WriteLine("Game Won!");
+                        break;
+                    case 2:
+                    Console.WriteLine("Treasure Found!");
+                        break;
+
+                }
+            }
+            else Console.WriteLine("Go back to Start");
+        }
+    
 
     }
 
